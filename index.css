@@ -1,0 +1,26 @@
+body
+{
+    background-color: greenyellow;
+    text-transform: capitalize;
+    font-family: "Sofia", sans-serif;
+}
+h2{
+    
+    color: rgb(74, 9, 114);
+    text-shadow: 2px 2px 5px red;
+}
+div{
+    background-color: pink;
+    opacity: 0.9;
+}
+body{
+    background-image: url(https://5.imimg.com/data5/SELLER/Default/2020/11/KM/NA/CV/114428010/cherry-blossom-hydrosol-500x500.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+p{
+    width: 500px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 25px;
+}
