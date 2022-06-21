@@ -7,80 +7,122 @@
 </head>
 <style>
     
-    p.dotted={border-style: dotted;
-    border-radius=5px;}
     body{
         font-family: "Sofia", sans-serif;
     }
+    p.thick {
+  font-weight: bold;
+}
+div {
+  
+   background-color: pink;
+   animation-name: example;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+ }
+ 
+ @keyframes example {
+   0%   {background-color: pink;}
+ 25%  {background-color: orange;}
+ 50%  {background-color: aqua;}
+ 75%  {background-color: rgb(103, 66, 248);}
+ 100% {background-color: rgb(241, 92, 92);}
+ }
+ textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  overflow: scroll;
+  resize: none;
+}
 </style>
-<body>
-    <p class="dotted">This is a paragraph</p>
-    <a href="https://www.google.com">Link to google</a>
-   
-    <h1>Heading</h1>
-    <h2>Heading</h2>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about">About us</a>
-        
-    </nav>
 
-    <img src="C:\Users\dell\Desktop\folder\Fs 1-10.jpeg" alt="Fourier series">
-    <nav>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            
-            <li>
-                <a href="/">Project</a>
-            </li>
-            <li>
-                <a href="/">Reference</a>
-            </li>
-            <li>
-                <a href="/">Don't disturb me</a>
-            </li>
-        </ul>
-    </nav>
-    <div>
+    
+<body>
+    
         <header>
-            <h1>Microsoft</h1>
-            <p>fourier series fourier series fourier series fourier series fourier series fourier series fourier series fourier series</p>
+            <h1>About Me</h1>
         </header>
-    </div>
-    <div style="color: Tomato;">
-        
-        <h2 style="border:2px solid blue ;">
-        Develop
-        </h2>
-        <p>
-            
-            <p>fourier series  fourier series fourier series fourier series fourier series vvvfourier series fourier series fourier series fourier series 
-        </p>
-    </div>
+<p class="thick"> Hello readers, I am Rajnandani. I am a student of b.tech. MnC branch at DA-IICT. I completed my highschool education from gujarat board in gujarati 
+    medium. When I was in my highschools, it was COVID-19 pandemic time so I completed my studies thriugh online mode. It was quite amezing experience for me 
+    to study though there were also disadvantages I faced. But it was miracle for me to get admission in DA-IICT. The board declared not to take exams 
+    for this years and marks would be granted as per the marks of SSC. I was quite sure that I cannot score more than 80% in boards but this announcement
+    made me achieve 95% in HSC board. In GUJCET exam, I manneged some how to score good. As the final result I got admission in DA. And I am having a 
+    beautifull journey ahead. In DA, the quality of education is uncomparable. The proffesors are responsive and responsible. Seniors are also very helpfull. Besides all this 
+    acedamic culture, there is anothor world for students in DA which is made up of various clubs and commitees. Here is a list of some clubs which as far as I can
+    remember.
+</p>
+<div class="w3-bar w3-green">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openClub(event,'Student Body Govt.')">Student Body Govt.</button>
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openClub(event,'Muse and Music Club')">Muse and Music Club</button>
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openClub(event,'Sports Commitee')">Sports Commitee</button>
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openClub(event,'Programming and Microsoft Club')">Programming and Microsoft Club</button>
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openClub(event,'Film and Radio Club')">Film and Radio Club</button>
+   
+</div>
+<div id="Student Body Govt." class="w3-container w3-border Club ">
+    <h2>Student Body Govt.</h2>
+    <p class="thick">A government made up for students which is run by the students. </p>
+  </div>
+  <div id="Muse and Music Club" class="w3-container w3-border Club"style="display:none">
+    <h2>Muse and Music Club</h2>
+    <p class="thick">A wonderfull spot for art lovers to express themselves through their art. </p>
+  </div>
+  <div id="Sports Commitee" class="w3-container w3-border Club"style="display:none">
+    <h2>Sports Commitee</h2>
+    <p class="thick">Do you have a sportsman spirit? Then this is best place for you.</p>
+  </div>
+  <div id="Programming and Microsoft Club" class="w3-container w3-border Club"style="display:none">
+    <h2>Programmin and Microsoft Club</h2>
+    <p class="thick">Concquare the world with your coding skills...</p>
+  </div>
+  <div id="Film and Radio Club" class="w3-container w3-border Club"style="display:none">
+    <h2>Film and Radio Club</h2>
+    <p class="thick">Enjoy your precious time with motivational movies and activities.  </p>
+  </div>
+ 
+  <script>
+    function openClub(evt,clubName) {
+      var i,x,tablinks;
+      var x = document.getElementsByClassName("Club");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+      document.getElementById(clubName).style.display = "block";  
+      evt.currentTarget.className += " w3-red";
+    }
+    </script>
+    
     <!-- comments comments -->
     <link rel="stylesheet" href="index.css">
     <div>
+        <h2>
+            Please leave your comments and suggestions for my work .
+        </h2>
         <form>
             <label>Name:</label>
             <input type="text">
             <label>Email:</label>
             <input type="email">
-            <label>Contact:</label>
+            <form>
+                <textarea>Please type your reviews here...</textarea>
+              </form>
             <input type="submit">
             <input type="reset">
         </form>
     </div>
-    <div style="background-color: Yellow">
-        <h2>Heading</h2>
-        <img src="https://mathworld.wolfram.com/images/eps-svg/FourierSeriesExamples_1200.svg">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-        </ul>
-    </nav>
+   
     
 </body>
 </html>

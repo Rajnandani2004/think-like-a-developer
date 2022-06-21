@@ -3,20 +3,29 @@ body
     background-color: greenyellow;
     text-transform: capitalize;
     font-family: "Sofia", sans-serif;
+    
+}
+h1{
+    
+    color: rgb(74, 9, 114);
+    text-shadow: 2px 2px 5px red;
 }
 h2{
     
     color: rgb(74, 9, 114);
-    text-shadow: 2px 2px 5px red;
+    text-shadow: 2px 2px 5px blue;
 }
 div{
     background-color: pink;
     opacity: 0.9;
 }
-body{
+p{
     background-image: url(https://5.imimg.com/data5/SELLER/Default/2020/11/KM/NA/CV/114428010/cherry-blossom-hydrosol-500x500.jpg);
+    background-size: 90%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: middle;
+    
 }
 p{
     width: 500px;
